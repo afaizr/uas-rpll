@@ -3,3 +3,4 @@ kube*.*
 node_modules
 *-kubeconfig.yml
 test1-kubeconfig.yml
+.env
