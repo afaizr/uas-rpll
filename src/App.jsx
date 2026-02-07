@@ -44,7 +44,7 @@ export default function App() {
               <b>Pengubah Suhu</b>
             </Body1>
           }
-          description={<Caption1>Ini Deskripsi</Caption1>}
+          description={<Caption1>Aplikasi Konverter Suhu</Caption1>}
         />
         <Select onChange={({ target }) => setTemperatureType(target.value)}>
           {option.map((selection, index) => (
@@ -64,7 +64,7 @@ export default function App() {
             className="btn__convert"
             onClick={handleTemperature}
           >
-            Tombol Berubah
+            Convert
           </Button>
           <Input
             value={`${temperature}° `}
