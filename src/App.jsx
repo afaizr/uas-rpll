@@ -41,10 +41,10 @@ export default function App() {
         <CardHeader
           header={
             <Body1>
-              <b>{import.meta.env.VITE_WEB_TITLE}</b>
+              <b>Pengubah Suhu</b>
             </Body1>
           }
-          description={<Caption1>{import.meta.env.VITE_WEB_DESCRIPTION}</Caption1>}
+          description={<Caption1>Ini Deskripsi</Caption1>}
         />
         <Select onChange={({ target }) => setTemperatureType(target.value)}>
           {option.map((selection, index) => (
