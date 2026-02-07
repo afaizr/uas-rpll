@@ -1,5 +1,4 @@
 kube*.*
-*.yml
 *.yaml
 node_modules
 *-kubeconfig.yml
