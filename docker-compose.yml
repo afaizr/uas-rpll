@@ -19,7 +19,6 @@ services:
       - REPO_USER=${GITHUB_USERNAME}
       - REPO_PASS=${GITHUB_PAT}
       # Pengaturan Watchtower
-      - DOCKER_API_VERSION=1.41
       - WATCHTOWER_POLL_INTERVAL=30 # Cek setiap 30 detik
       - WATCHTOWER_CLEANUP=true      # Hapus image lama agar SSD Mac tidak penuh
       - WATCHTOWER_LABEL_ENABLE=false # Memantau semua container yang running
