@@ -9,7 +9,7 @@ services:
 
   # Si Penjaga Otomatis (Watchtower)
   watchtower:
-    image: containrrr/watchtower:latest
+    image: ghcr.io/nicholas-fedor/watchtower:latest-dev
     container_name: watchtower
     restart: always
     volumes:
@@ -19,6 +19,6 @@ services:
       - REPO_USER=${GITHUB_USERNAME}
       - REPO_PASS=${GITHUB_PAT}
       # Pengaturan Watchtower
-      - WATCHTOWER_POLL_INTERVAL=30 # Cek setiap 30 detik
+      - WATCHTOWER_POLL_INTERVAL=30 # Cek setiap 60 detik
       - WATCHTOWER_CLEANUP=true      # Hapus image lama agar SSD Mac tidak penuh
       - WATCHTOWER_LABEL_ENABLE=false # Memantau semua container yang running
